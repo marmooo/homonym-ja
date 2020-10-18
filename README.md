@@ -11,7 +11,7 @@ npm install homonym-ja
 2. install [UniDic](https://unidic.ninjal.ac.jp/)
 3. install [SudachiDict](https://github.com/WorksApplications/SudachiDict)
 4. ```npm install```
-5. ```node build.js``` or ```node build.sh```
+5. ```node build.js``` or ```bash build.sh```
 
 ## Usage
 ```
