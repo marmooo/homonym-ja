@@ -139,7 +139,7 @@ index[0] = 0;
 index[10] = homonyms.length - 1;
 for (var i=1; i<akasatana.length; i++) {
   for (var j=pos; j<homonyms.length; j++) {
-    if (homonyms[j][0] == akasatana[i]) {
+    if (homonyms[j][0][0] == akasatana[i]) {
       index[i] = j;
       pos = j + 1;
       break;
