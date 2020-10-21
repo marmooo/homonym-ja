@@ -16,8 +16,8 @@ npm install homonym-ja
 ```
 const HomonymJa = require('homonym-ja');
 
-const homonymJa = new HomonymJa();
-homonymJa.get('ついきゅう');  // --> [追究, 追及, etc.]
+const dict = new HomonymJa();
+dict.get('ついきゅう');  // --> [追究, 追及, etc.]
 ```
 
 ## License
