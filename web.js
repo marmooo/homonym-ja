@@ -147,7 +147,6 @@ for (var i=1; i<akasatana.length; i++) {
   }
 }
 
-// var data = new Array(9).fill(new Array(gradeByKanjis.length + 1));
 var data = new Array(gradeByKanjis.length + 1);
 for (var i=0; i<data.length; i++) {
   data[i] = new Array(10);
