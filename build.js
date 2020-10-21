@@ -15,7 +15,7 @@ const dicts = {
   NaistJdic: [  // require iconv
     'mecab-naist-jdic-0.6.3b-20111013/naist-jdic.utf8.csv'
   ],
-  UniDic: ['unidic-csj-3.0.1.1/lex.csv'],
+  // UniDic: ['unidic-csj-3.0.1.1/lex.csv'],
   SudachiDict: [
     'SudachiDict/src/main/text/small_lex.csv',
     'SudachiDict/src/main/text/core_lex.csv',
@@ -57,6 +57,10 @@ function getWordFromNaistJdic(line) {
   }
   var word = arr[0];
   var yomi = arr[11];
+  var variants = arr[13];
+  if (variants != '') {
+    return false;
+  }
   return [word, yomi, pos1];
 }
 
@@ -69,7 +73,7 @@ function getWordFromUniDic(line) {
   if (pos2 == '固有名詞') {
     return false;
   }
-  if (pos1 != '名詞' && form2 != '基本形') {
+  if (pos1 != '名詞' && form2 != '終止形-一般') {
     return false;
   }
   var word = arr[0];
@@ -86,16 +90,20 @@ function getWordFromUniDic(line) {
 
 function getWordFromSudachiDict(line) {
   var arr = line.split(',');
+  var surface = arr[0];
+  var word = arr[12];
+  if (surface != word) {
+    return false;
+  }
   var pos1 = arr[5];
   var pos2 = arr[6];
   var form2 = arr[10];
   if (pos2 == '固有名詞') {
     return false;
   }
-  if (pos1 != '名詞' && form2 != '基本形') {
+  if (pos1 != '名詞' && form2 != '終止形-一般') {
     return false;
   }
-  var word = arr[0];
   var yomi = arr[11];
   return [word, yomi, pos1];
 }
@@ -149,11 +157,18 @@ for (var [yomi, words] of Object.entries(d)) {
     delete d[yomi];
   }
 }
+var arr = Object.entries(d).map(([k,v]) => [k,v]);
+arr.sort(function(a,b){
+  if(a[0] < b[0]) return -1;
+  if(a[0] > b[0]) return 1;
+  return 0;
+});
 
 if (fs.existsSync(outPath)) {
   fs.unlinkSync(outPath);
 }
-for (var [yomi, words] of Object.entries(d)) {
+arr.forEach(e => {
+  var [yomi, words] = e;
   fs.appendFileSync(outPath, yomi + ',' + words.join(',') + '\n');
-}
+});
 

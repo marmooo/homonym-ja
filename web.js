@@ -131,11 +131,6 @@ readEachLineSync('homonym.csv', 'utf8', (line) => {
   var words = arr.slice(1);
   homonyms.push([yomi, words]);
 });
-homonyms.sort((a,b) => {
-  if(a[0] < b[0]) return -1;
-  if(a[0] > b[0]) return 1;
-  return 0;
-});
 
 var akasatana = 'あかさたなはまやらわ';
 var pos = 0;
