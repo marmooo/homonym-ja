@@ -136,7 +136,7 @@ var akasatana = 'あかさたなはまやらわ';
 var pos = 0;
 var index = new Array(11);
 index[0] = 0;
-index[10] = homonyms[homonyms.length - 1];
+index[10] = homonyms.length - 1;
 for (var i=1; i<akasatana.length; i++) {
   for (var j=pos; j<homonyms.length; j++) {
     if (homonyms[j][0] == akasatana[i]) {
