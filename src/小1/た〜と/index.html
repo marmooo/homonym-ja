@@ -22,7 +22,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/homonym-ja/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <style>
       html[data-theme="dark"] { filter: invert(1) hue-rotate(180deg); }
       @-moz-document url-prefix() { html[data-theme="dark"] { background-color:black; } }
@@ -37,7 +37,7 @@
             同音異義語 <small>(15,259)</small>
           </a>
           <div class="navbar-nav">
-            <select onchange="changeGrade(this)" id="gradeOption" class="form-control form-control-sm" aria-label="学年">
+            <select onchange="changeGrade(this)" id="gradeOption" class="form-select form-select-sm" aria-label="学年">
               <option selected>小1</option>
               <option >小2</option>
               <option >小3</option>
@@ -49,7 +49,7 @@
               <option >常用</option>
               <option >常用外</option>
             </select>
-            <button title="ダークモード切替" onclick="toggleDarkMode()" class="ml-2 close">🌓</button>
+            <button title="ダークモード切替" onclick="toggleDarkMode()" class="fs-4 btn p-0 ms-1">🌓</button>
           </div>
         </div>
       </nav>
@@ -65,7 +65,7 @@
         <div class="card-header">小学1年生の語順リスト</div>
         <div class="card-body text-center">
           
-<ul class="row d-flex justify-content-center list-unstyled">
+<ul class="d-flex justify-content-center list-unstyled">
 <li class="px-1"><a href="/homonym-ja/小1/あ〜お/">あ〜お</a></li>
 <li class="px-1"><a href="/homonym-ja/小1/か〜こ/">か〜こ</a></li>
 <li class="px-1"><a href="/homonym-ja/小1/さ〜そ/">さ〜そ</a></li>
@@ -92,37 +92,37 @@
         <div class="card-body d-flex flex-wrap">
           
 
-<dl class="row m-0"><dt class="px-1">だいせん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">だいせん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=大山とは" target="_blank" rel="noopener noreferer">大山</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=大川とは" target="_blank" rel="noopener noreferer">大川</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">だし</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">だし</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=山車とは" target="_blank" rel="noopener noreferer">山車</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=出とは" target="_blank" rel="noopener noreferer">出</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ちゅう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ちゅう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=中とは" target="_blank" rel="noopener noreferer">中</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=虫とは" target="_blank" rel="noopener noreferer">虫</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ちゅうじ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ちゅうじ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=中耳とは" target="_blank" rel="noopener noreferer">中耳</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=中字とは" target="_blank" rel="noopener noreferer">中字</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ちゅうせい</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ちゅうせい</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=中正とは" target="_blank" rel="noopener noreferer">中正</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=中生とは" target="_blank" rel="noopener noreferer">中生</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">てんか</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">てんか</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=天下とは" target="_blank" rel="noopener noreferer">天下</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=天火とは" target="_blank" rel="noopener noreferer">天火</a>
@@ -130,13 +130,13 @@
 <a href="https://www.google.com/search?q=天花とは" target="_blank" rel="noopener noreferer">天花</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">てんぴ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">てんぴ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=天火とは" target="_blank" rel="noopener noreferer">天火</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=天日とは" target="_blank" rel="noopener noreferer">天日</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">で</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">で</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=出とは" target="_blank" rel="noopener noreferer">出</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=手とは" target="_blank" rel="noopener noreferer">手</a>
@@ -151,7 +151,7 @@
         <a class="px-1" href="/terms/">Terms</a>
         <a class="px-1" href="https://github.com/marmooo/homonym-ja">Contact</a>
       </div>
-      <div class="text-muted">&copy; <a href="https://github.com/marmooo">marmooo</a>. All Rights Reserved.</div>
+      <div class="text-muted">&copy; <a href="https://github.com/marmooo">marmooo</a></div>
     </footer>
     <script src="/homonym-ja/page.js"></script>
   </body>

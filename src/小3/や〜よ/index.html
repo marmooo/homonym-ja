@@ -22,7 +22,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/homonym-ja/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <style>
       html[data-theme="dark"] { filter: invert(1) hue-rotate(180deg); }
       @-moz-document url-prefix() { html[data-theme="dark"] { background-color:black; } }
@@ -37,7 +37,7 @@
             同音異義語 <small>(15,259)</small>
           </a>
           <div class="navbar-nav">
-            <select onchange="changeGrade(this)" id="gradeOption" class="form-control form-control-sm" aria-label="学年">
+            <select onchange="changeGrade(this)" id="gradeOption" class="form-select form-select-sm" aria-label="学年">
               <option >小1</option>
               <option >小2</option>
               <option selected>小3</option>
@@ -49,7 +49,7 @@
               <option >常用</option>
               <option >常用外</option>
             </select>
-            <button title="ダークモード切替" onclick="toggleDarkMode()" class="ml-2 close">🌓</button>
+            <button title="ダークモード切替" onclick="toggleDarkMode()" class="fs-4 btn p-0 ms-1">🌓</button>
           </div>
         </div>
       </nav>
@@ -65,7 +65,7 @@
         <div class="card-header">小学3年生の語順リスト</div>
         <div class="card-body text-center">
           
-<ul class="row d-flex justify-content-center list-unstyled">
+<ul class="d-flex justify-content-center list-unstyled">
 <li class="px-1"><a href="/homonym-ja/小3/あ〜お/">あ〜お</a></li>
 <li class="px-1"><a href="/homonym-ja/小3/か〜こ/">か〜こ</a></li>
 <li class="px-1"><a href="/homonym-ja/小3/さ〜そ/">さ〜そ</a></li>
@@ -85,19 +85,19 @@
         <div class="card-body d-flex flex-wrap">
           
 
-<dl class="row m-0"><dt class="px-1">やすらう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やすらう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=安らうとは" target="_blank" rel="noopener noreferer">安らう</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=休らうとは" target="_blank" rel="noopener noreferer">休らう</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やむ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やむ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=病むとは" target="_blank" rel="noopener noreferer">病む</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=止むとは" target="_blank" rel="noopener noreferer">止む</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=言うとは" target="_blank" rel="noopener noreferer">言う</a>
 </dd></dl>
 
@@ -108,7 +108,7 @@
         <div class="card-body d-flex flex-wrap">
           
 
-<dl class="row m-0"><dt class="px-1">や</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">や</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=屋とは" target="_blank" rel="noopener noreferer">屋</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夜とは" target="_blank" rel="noopener noreferer">夜</a>
@@ -122,67 +122,67 @@
 <a href="https://www.google.com/search?q=野とは" target="_blank" rel="noopener noreferer">野</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やかず</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やかず</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=家数とは" target="_blank" rel="noopener noreferer">家数</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=矢数とは" target="_blank" rel="noopener noreferer">矢数</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やかた</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やかた</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=屋形とは" target="_blank" rel="noopener noreferer">屋形</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=館とは" target="_blank" rel="noopener noreferer">館</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やき</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やき</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夜気とは" target="_blank" rel="noopener noreferer">夜気</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=野気とは" target="_blank" rel="noopener noreferer">野気</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やぎ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やぎ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=山羊とは" target="_blank" rel="noopener noreferer">山羊</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=野羊とは" target="_blank" rel="noopener noreferer">野羊</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やく</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やく</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=役とは" target="_blank" rel="noopener noreferer">役</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=薬とは" target="_blank" rel="noopener noreferer">薬</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やくだい</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やくだい</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=薬代とは" target="_blank" rel="noopener noreferer">薬代</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=薬大とは" target="_blank" rel="noopener noreferer">薬大</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やくめい</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やくめい</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=役名とは" target="_blank" rel="noopener noreferer">役名</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=薬名とは" target="_blank" rel="noopener noreferer">薬名</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やこう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やこう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夜光とは" target="_blank" rel="noopener noreferer">夜光</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夜行とは" target="_blank" rel="noopener noreferer">夜行</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やごう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やごう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=屋号とは" target="_blank" rel="noopener noreferer">屋号</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=野合とは" target="_blank" rel="noopener noreferer">野合</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やしょく</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やしょく</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夜色とは" target="_blank" rel="noopener noreferer">夜色</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夜食とは" target="_blank" rel="noopener noreferer">夜食</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やそう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やそう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=野草とは" target="_blank" rel="noopener noreferer">野草</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夜想とは" target="_blank" rel="noopener noreferer">夜想</a>
@@ -190,19 +190,19 @@
 <a href="https://www.google.com/search?q=夜走とは" target="_blank" rel="noopener noreferer">夜走</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やたい</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やたい</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=屋体とは" target="_blank" rel="noopener noreferer">屋体</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=屋台とは" target="_blank" rel="noopener noreferer">屋台</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やたいみせ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やたいみせ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=屋体店とは" target="_blank" rel="noopener noreferer">屋体店</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=屋台店とは" target="_blank" rel="noopener noreferer">屋台店</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やち</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やち</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=谷地とは" target="_blank" rel="noopener noreferer">谷地</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=谷とは" target="_blank" rel="noopener noreferer">谷</a>
@@ -210,7 +210,7 @@
 <a href="https://www.google.com/search?q=野地とは" target="_blank" rel="noopener noreferer">野地</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やちょう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やちょう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夜鳥とは" target="_blank" rel="noopener noreferer">夜鳥</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=野鳥とは" target="_blank" rel="noopener noreferer">野鳥</a>
@@ -218,49 +218,49 @@
 <a href="https://www.google.com/search?q=野帳とは" target="_blank" rel="noopener noreferer">野帳</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やば</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やば</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=矢場とは" target="_blank" rel="noopener noreferer">矢場</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=野馬とは" target="_blank" rel="noopener noreferer">野馬</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やまいぬ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やまいぬ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=山犬とは" target="_blank" rel="noopener noreferer">山犬</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=病犬とは" target="_blank" rel="noopener noreferer">病犬</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やません</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やません</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=山千とは" target="_blank" rel="noopener noreferer">山千</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=山線とは" target="_blank" rel="noopener noreferer">山線</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やまみち</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やまみち</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=山道とは" target="_blank" rel="noopener noreferer">山道</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=山路とは" target="_blank" rel="noopener noreferer">山路</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やらい</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やらい</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夜来とは" target="_blank" rel="noopener noreferer">夜来</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=矢来とは" target="_blank" rel="noopener noreferer">矢来</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">やわ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">やわ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夜話とは" target="_blank" rel="noopener noreferer">夜話</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=和とは" target="_blank" rel="noopener noreferer">和</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=湯とは" target="_blank" rel="noopener noreferer">湯</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=油とは" target="_blank" rel="noopener noreferer">油</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=有とは" target="_blank" rel="noopener noreferer">有</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夕とは" target="_blank" rel="noopener noreferer">夕</a>
@@ -268,25 +268,25 @@
 <a href="https://www.google.com/search?q=遊とは" target="_blank" rel="noopener noreferer">遊</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆうかく</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆうかく</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=遊客とは" target="_blank" rel="noopener noreferer">遊客</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=有角とは" target="_blank" rel="noopener noreferer">有角</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆうき</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆうき</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=有期とは" target="_blank" rel="noopener noreferer">有期</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=有気とは" target="_blank" rel="noopener noreferer">有気</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆうきゅう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆうきゅう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=有休とは" target="_blank" rel="noopener noreferer">有休</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=遊休とは" target="_blank" rel="noopener noreferer">遊休</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆうこう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆうこう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=有向とは" target="_blank" rel="noopener noreferer">有向</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=遊行とは" target="_blank" rel="noopener noreferer">遊行</a>
@@ -296,7 +296,7 @@
 <a href="https://www.google.com/search?q=有光とは" target="_blank" rel="noopener noreferer">有光</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆうし</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆうし</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=遊子とは" target="_blank" rel="noopener noreferer">遊子</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=遊糸とは" target="_blank" rel="noopener noreferer">遊糸</a>
@@ -304,19 +304,19 @@
 <a href="https://www.google.com/search?q=有歯とは" target="_blank" rel="noopener noreferer">有歯</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆうしょく</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆうしょく</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=有色とは" target="_blank" rel="noopener noreferer">有色</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夕食とは" target="_blank" rel="noopener noreferer">夕食</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆうじ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆうじ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=有事とは" target="_blank" rel="noopener noreferer">有事</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=有時とは" target="_blank" rel="noopener noreferer">有時</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆうじん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆうじん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=友人とは" target="_blank" rel="noopener noreferer">友人</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=有人とは" target="_blank" rel="noopener noreferer">有人</a>
@@ -324,7 +324,7 @@
 <a href="https://www.google.com/search?q=遊人とは" target="_blank" rel="noopener noreferer">遊人</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆうせい</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆうせい</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=有生とは" target="_blank" rel="noopener noreferer">有生</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=遊星とは" target="_blank" rel="noopener noreferer">遊星</a>
@@ -332,61 +332,61 @@
 <a href="https://www.google.com/search?q=有声とは" target="_blank" rel="noopener noreferer">有声</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆうせん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆうせん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=有線とは" target="_blank" rel="noopener noreferer">有線</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=遊船とは" target="_blank" rel="noopener noreferer">遊船</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆうそう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆうそう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=有相とは" target="_blank" rel="noopener noreferer">有相</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=遊走とは" target="_blank" rel="noopener noreferer">遊走</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆうひ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆうひ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夕日とは" target="_blank" rel="noopener noreferer">夕日</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夕陽とは" target="_blank" rel="noopener noreferer">夕陽</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆうり</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆうり</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=有理とは" target="_blank" rel="noopener noreferer">有理</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=遊里とは" target="_blank" rel="noopener noreferer">遊里</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆうれい</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆうれい</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夕礼とは" target="_blank" rel="noopener noreferer">夕礼</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=有礼とは" target="_blank" rel="noopener noreferer">有礼</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆき</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆき</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=行とは" target="_blank" rel="noopener noreferer">行</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=雪とは" target="_blank" rel="noopener noreferer">雪</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆきげ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆきげ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=雪消とは" target="_blank" rel="noopener noreferer">雪消</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=雪気とは" target="_blank" rel="noopener noreferer">雪気</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆば</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆば</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=湯葉とは" target="_blank" rel="noopener noreferer">湯葉</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=湯場とは" target="_blank" rel="noopener noreferer">湯場</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ゆもと</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ゆもと</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=湯元とは" target="_blank" rel="noopener noreferer">湯元</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=湯本とは" target="_blank" rel="noopener noreferer">湯本</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">よ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">よ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=世とは" target="_blank" rel="noopener noreferer">世</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夜とは" target="_blank" rel="noopener noreferer">夜</a>
@@ -396,7 +396,7 @@
 <a href="https://www.google.com/search?q=四とは" target="_blank" rel="noopener noreferer">四</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">よう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">よう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=様とは" target="_blank" rel="noopener noreferer">様</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋とは" target="_blank" rel="noopener noreferer">洋</a>
@@ -414,37 +414,37 @@
 <a href="https://www.google.com/search?q=曜とは" target="_blank" rel="noopener noreferer">曜</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようい</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようい</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=用意とは" target="_blank" rel="noopener noreferer">用意</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋医とは" target="_blank" rel="noopener noreferer">洋医</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようかん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようかん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋館とは" target="_blank" rel="noopener noreferer">洋館</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=用間とは" target="_blank" rel="noopener noreferer">用間</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようが</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようが</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋画とは" target="_blank" rel="noopener noreferer">洋画</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=陽画とは" target="_blank" rel="noopener noreferer">陽画</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようがく</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようがく</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋学とは" target="_blank" rel="noopener noreferer">洋学</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋楽とは" target="_blank" rel="noopener noreferer">洋楽</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようこう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようこう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋行とは" target="_blank" rel="noopener noreferer">洋行</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=陽光とは" target="_blank" rel="noopener noreferer">陽光</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようご</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようご</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋語とは" target="_blank" rel="noopener noreferer">洋語</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=用後とは" target="_blank" rel="noopener noreferer">用後</a>
@@ -452,7 +452,7 @@
 <a href="https://www.google.com/search?q=用語とは" target="_blank" rel="noopener noreferer">用語</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようし</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようし</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋紙とは" target="_blank" rel="noopener noreferer">洋紙</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=用紙とは" target="_blank" rel="noopener noreferer">用紙</a>
@@ -460,25 +460,25 @@
 <a href="https://www.google.com/search?q=陽子とは" target="_blank" rel="noopener noreferer">陽子</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようしき</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようしき</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=様式とは" target="_blank" rel="noopener noreferer">様式</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋式とは" target="_blank" rel="noopener noreferer">洋式</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようしきか</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようしきか</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=様式化とは" target="_blank" rel="noopener noreferer">様式化</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋式化とは" target="_blank" rel="noopener noreferer">洋式化</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようしゅ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようしゅ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋酒とは" target="_blank" rel="noopener noreferer">洋酒</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=陽守とは" target="_blank" rel="noopener noreferer">陽守</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようじ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようじ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=用事とは" target="_blank" rel="noopener noreferer">用事</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=用字とは" target="_blank" rel="noopener noreferer">用字</a>
@@ -486,25 +486,25 @@
 <a href="https://www.google.com/search?q=洋字とは" target="_blank" rel="noopener noreferer">洋字</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようじん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようじん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=用心とは" target="_blank" rel="noopener noreferer">用心</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋人とは" target="_blank" rel="noopener noreferer">洋人</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようすい</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようすい</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=用水とは" target="_blank" rel="noopener noreferer">用水</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=羊水とは" target="_blank" rel="noopener noreferer">羊水</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようせん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようせん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=用船とは" target="_blank" rel="noopener noreferer">用船</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=陽線とは" target="_blank" rel="noopener noreferer">陽線</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようち</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようち</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=用地とは" target="_blank" rel="noopener noreferer">用地</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=用池とは" target="_blank" rel="noopener noreferer">用池</a>
@@ -514,37 +514,37 @@
 <a href="https://www.google.com/search?q=陽池とは" target="_blank" rel="noopener noreferer">陽池</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようとう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようとう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋刀とは" target="_blank" rel="noopener noreferer">洋刀</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=羊頭とは" target="_blank" rel="noopener noreferer">羊頭</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようど</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようど</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=用度とは" target="_blank" rel="noopener noreferer">用度</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=用土とは" target="_blank" rel="noopener noreferer">用土</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようにく</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようにく</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=羊肉とは" target="_blank" rel="noopener noreferer">羊肉</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=葉肉とは" target="_blank" rel="noopener noreferer">葉肉</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようひん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようひん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋品とは" target="_blank" rel="noopener noreferer">洋品</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=用品とは" target="_blank" rel="noopener noreferer">用品</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようひんてん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようひんてん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋品店とは" target="_blank" rel="noopener noreferer">洋品店</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=用品店とは" target="_blank" rel="noopener noreferer">用品店</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようめい</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようめい</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋名とは" target="_blank" rel="noopener noreferer">洋名</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=用命とは" target="_blank" rel="noopener noreferer">用命</a>
@@ -552,37 +552,37 @@
 <a href="https://www.google.com/search?q=陽明とは" target="_blank" rel="noopener noreferer">陽明</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようやく</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようやく</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋薬とは" target="_blank" rel="noopener noreferer">洋薬</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=用薬とは" target="_blank" rel="noopener noreferer">用薬</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">ようよう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">ようよう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=洋洋とは" target="_blank" rel="noopener noreferer">洋洋</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=陽葉とは" target="_blank" rel="noopener noreferer">陽葉</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">よけん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">よけん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=予見とは" target="_blank" rel="noopener noreferer">予見</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=予研とは" target="_blank" rel="noopener noreferer">予研</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">よこちょう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">よこちょう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=横丁とは" target="_blank" rel="noopener noreferer">横丁</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=横町とは" target="_blank" rel="noopener noreferer">横町</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">よみせ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">よみせ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夜見世とは" target="_blank" rel="noopener noreferer">夜見世</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夜店とは" target="_blank" rel="noopener noreferer">夜店</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">よよ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">よよ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=世世とは" target="_blank" rel="noopener noreferer">世世</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=夜夜とは" target="_blank" rel="noopener noreferer">夜夜</a>
@@ -597,7 +597,7 @@
         <a class="px-1" href="/terms/">Terms</a>
         <a class="px-1" href="https://github.com/marmooo/homonym-ja">Contact</a>
       </div>
-      <div class="text-muted">&copy; <a href="https://github.com/marmooo">marmooo</a>. All Rights Reserved.</div>
+      <div class="text-muted">&copy; <a href="https://github.com/marmooo">marmooo</a></div>
     </footer>
     <script src="/homonym-ja/page.js"></script>
   </body>

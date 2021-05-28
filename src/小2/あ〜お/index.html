@@ -22,7 +22,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/homonym-ja/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <style>
       html[data-theme="dark"] { filter: invert(1) hue-rotate(180deg); }
       @-moz-document url-prefix() { html[data-theme="dark"] { background-color:black; } }
@@ -37,7 +37,7 @@
             同音異義語 <small>(15,259)</small>
           </a>
           <div class="navbar-nav">
-            <select onchange="changeGrade(this)" id="gradeOption" class="form-control form-control-sm" aria-label="学年">
+            <select onchange="changeGrade(this)" id="gradeOption" class="form-select form-select-sm" aria-label="学年">
               <option >小1</option>
               <option selected>小2</option>
               <option >小3</option>
@@ -49,7 +49,7 @@
               <option >常用</option>
               <option >常用外</option>
             </select>
-            <button title="ダークモード切替" onclick="toggleDarkMode()" class="ml-2 close">🌓</button>
+            <button title="ダークモード切替" onclick="toggleDarkMode()" class="fs-4 btn p-0 ms-1">🌓</button>
           </div>
         </div>
       </nav>
@@ -65,7 +65,7 @@
         <div class="card-header">小学2年生の語順リスト</div>
         <div class="card-body text-center">
           
-<ul class="row d-flex justify-content-center list-unstyled">
+<ul class="d-flex justify-content-center list-unstyled">
 <li class="px-1"><a href="/homonym-ja/小2/あ〜お/">あ〜お</a></li>
 <li class="px-1"><a href="/homonym-ja/小2/か〜こ/">か〜こ</a></li>
 <li class="px-1"><a href="/homonym-ja/小2/さ〜そ/">さ〜そ</a></li>
@@ -85,37 +85,37 @@
         <div class="card-body d-flex flex-wrap">
           
 
-<dl class="row m-0"><dt class="px-1">あう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">あう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=合うとは" target="_blank" rel="noopener noreferer">合う</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=会うとは" target="_blank" rel="noopener noreferer">会う</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">あからむ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">あからむ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=明らむとは" target="_blank" rel="noopener noreferer">明らむ</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=赤らむとは" target="_blank" rel="noopener noreferer">赤らむ</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">あく</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">あく</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=明くとは" target="_blank" rel="noopener noreferer">明く</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=空くとは" target="_blank" rel="noopener noreferer">空く</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">あける</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">あける</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=明けるとは" target="_blank" rel="noopener noreferer">明ける</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=空けるとは" target="_blank" rel="noopener noreferer">空ける</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いきなおす</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いきなおす</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=生き直すとは" target="_blank" rel="noopener noreferer">生き直す</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=行き直すとは" target="_blank" rel="noopener noreferer">行き直す</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">おりる</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">おりる</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=下りるとは" target="_blank" rel="noopener noreferer">下りる</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=下るとは" target="_blank" rel="noopener noreferer">下る</a>
@@ -128,67 +128,67 @@
         <div class="card-body d-flex flex-wrap">
           
 
-<dl class="row m-0"><dt class="px-1">あい</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">あい</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=間とは" target="_blank" rel="noopener noreferer">間</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=合とは" target="_blank" rel="noopener noreferer">合</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">あおじ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">あおじ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=青地とは" target="_blank" rel="noopener noreferer">青地</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=青字とは" target="_blank" rel="noopener noreferer">青字</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">あかじ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">あかじ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=赤字とは" target="_blank" rel="noopener noreferer">赤字</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=赤地とは" target="_blank" rel="noopener noreferer">赤地</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">あかめ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">あかめ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=赤目とは" target="_blank" rel="noopener noreferer">赤目</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=赤女とは" target="_blank" rel="noopener noreferer">赤女</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">あき</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">あき</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=秋とは" target="_blank" rel="noopener noreferer">秋</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=空とは" target="_blank" rel="noopener noreferer">空</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">あきの</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">あきの</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=秋とは" target="_blank" rel="noopener noreferer">秋</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=秋野とは" target="_blank" rel="noopener noreferer">秋野</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">あきま</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">あきま</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=空間とは" target="_blank" rel="noopener noreferer">空間</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=明間とは" target="_blank" rel="noopener noreferer">明間</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">あけび</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">あけび</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=通草とは" target="_blank" rel="noopener noreferer">通草</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=木通とは" target="_blank" rel="noopener noreferer">木通</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">あさいち</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">あさいち</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=朝市とは" target="_blank" rel="noopener noreferer">朝市</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=朝一とは" target="_blank" rel="noopener noreferer">朝一</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">あしもと</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">あしもと</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=足下とは" target="_blank" rel="noopener noreferer">足下</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=足元とは" target="_blank" rel="noopener noreferer">足元</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">あま</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">あま</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=海女とは" target="_blank" rel="noopener noreferer">海女</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=海人とは" target="_blank" rel="noopener noreferer">海人</a>
@@ -198,19 +198,19 @@
 <a href="https://www.google.com/search?q=天とは" target="_blank" rel="noopener noreferer">天</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">あめ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">あめ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=雨とは" target="_blank" rel="noopener noreferer">雨</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=天とは" target="_blank" rel="noopener noreferer">天</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いき</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いき</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=行とは" target="_blank" rel="noopener noreferer">行</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=生とは" target="_blank" rel="noopener noreferer">生</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いけ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いけ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=池とは" target="_blank" rel="noopener noreferer">池</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=活とは" target="_blank" rel="noopener noreferer">活</a>
@@ -218,19 +218,19 @@
 <a href="https://www.google.com/search?q=生とは" target="_blank" rel="noopener noreferer">生</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いけばな</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いけばな</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=活花とは" target="_blank" rel="noopener noreferer">活花</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=生花とは" target="_blank" rel="noopener noreferer">生花</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いち</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いち</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一とは" target="_blank" rel="noopener noreferer">一</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=市とは" target="_blank" rel="noopener noreferer">市</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いちげん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いちげん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一元とは" target="_blank" rel="noopener noreferer">一元</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一言とは" target="_blank" rel="noopener noreferer">一言</a>
@@ -238,61 +238,61 @@
 <a href="https://www.google.com/search?q=一見とは" target="_blank" rel="noopener noreferer">一見</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いちじ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いちじ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一時とは" target="_blank" rel="noopener noreferer">一時</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一字とは" target="_blank" rel="noopener noreferer">一字</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いちどう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いちどう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一同とは" target="_blank" rel="noopener noreferer">一同</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一道とは" target="_blank" rel="noopener noreferer">一道</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いちぶん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いちぶん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一文とは" target="_blank" rel="noopener noreferer">一文</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一分とは" target="_blank" rel="noopener noreferer">一分</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いちもん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いちもん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一文とは" target="_blank" rel="noopener noreferer">一文</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一門とは" target="_blank" rel="noopener noreferer">一門</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いちり</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いちり</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一理とは" target="_blank" rel="noopener noreferer">一理</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一里とは" target="_blank" rel="noopener noreferer">一里</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いっか</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いっか</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一家とは" target="_blank" rel="noopener noreferer">一家</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一下とは" target="_blank" rel="noopener noreferer">一下</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いっかく</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いっかく</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一角とは" target="_blank" rel="noopener noreferer">一角</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一画とは" target="_blank" rel="noopener noreferer">一画</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いっけん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いっけん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一間とは" target="_blank" rel="noopener noreferer">一間</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一見とは" target="_blank" rel="noopener noreferer">一見</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いっこう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いっこう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一考とは" target="_blank" rel="noopener noreferer">一考</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一行とは" target="_blank" rel="noopener noreferer">一行</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いっし</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いっし</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一子とは" target="_blank" rel="noopener noreferer">一子</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一糸とは" target="_blank" rel="noopener noreferer">一糸</a>
@@ -300,49 +300,49 @@
 <a href="https://www.google.com/search?q=一矢とは" target="_blank" rel="noopener noreferer">一矢</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いっしん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いっしん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一心とは" target="_blank" rel="noopener noreferer">一心</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一新とは" target="_blank" rel="noopener noreferer">一新</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いっせき</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いっせき</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一石とは" target="_blank" rel="noopener noreferer">一石</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一夕とは" target="_blank" rel="noopener noreferer">一夕</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いっせん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いっせん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一千とは" target="_blank" rel="noopener noreferer">一千</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一線とは" target="_blank" rel="noopener noreferer">一線</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いっそう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いっそう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一草とは" target="_blank" rel="noopener noreferer">一草</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一走とは" target="_blank" rel="noopener noreferer">一走</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いっちょう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いっちょう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一朝とは" target="_blank" rel="noopener noreferer">一朝</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一長とは" target="_blank" rel="noopener noreferer">一長</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いってん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いってん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一天とは" target="_blank" rel="noopener noreferer">一天</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一点とは" target="_blank" rel="noopener noreferer">一点</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いっとう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いっとう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一刀とは" target="_blank" rel="noopener noreferer">一刀</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一答とは" target="_blank" rel="noopener noreferer">一答</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いつ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いつ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=何時とは" target="_blank" rel="noopener noreferer">何時</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=一とは" target="_blank" rel="noopener noreferer">一</a>
@@ -350,19 +350,19 @@
 <a href="https://www.google.com/search?q=五とは" target="_blank" rel="noopener noreferer">五</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">いろじ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">いろじ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=色地とは" target="_blank" rel="noopener noreferer">色地</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=色字とは" target="_blank" rel="noopener noreferer">色字</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">うし</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">うし</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=牛とは" target="_blank" rel="noopener noreferer">牛</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=大人とは" target="_blank" rel="noopener noreferer">大人</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">うち</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">うち</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=家とは" target="_blank" rel="noopener noreferer">家</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=内とは" target="_blank" rel="noopener noreferer">内</a>
@@ -370,37 +370,37 @@
 <a href="https://www.google.com/search?q=中とは" target="_blank" rel="noopener noreferer">中</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">うちゅう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">うちゅう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=雨中とは" target="_blank" rel="noopener noreferer">雨中</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=右中とは" target="_blank" rel="noopener noreferer">右中</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">うま</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">うま</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=午とは" target="_blank" rel="noopener noreferer">午</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=馬とは" target="_blank" rel="noopener noreferer">馬</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">うりん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">うりん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=雨林とは" target="_blank" rel="noopener noreferer">雨林</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=雲林とは" target="_blank" rel="noopener noreferer">雲林</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">え</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">え</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=絵とは" target="_blank" rel="noopener noreferer">絵</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=会とは" target="_blank" rel="noopener noreferer">会</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">えん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">えん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=円とは" target="_blank" rel="noopener noreferer">円</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=園とは" target="_blank" rel="noopener noreferer">園</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">えんこう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">えんこう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=円光とは" target="_blank" rel="noopener noreferer">円光</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=円口とは" target="_blank" rel="noopener noreferer">円口</a>
@@ -410,109 +410,109 @@
 <a href="https://www.google.com/search?q=遠行とは" target="_blank" rel="noopener noreferer">遠行</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">えんしん</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">えんしん</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=円心とは" target="_blank" rel="noopener noreferer">円心</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=遠心とは" target="_blank" rel="noopener noreferer">遠心</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">えんせき</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">えんせき</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=円石とは" target="_blank" rel="noopener noreferer">円石</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=遠赤とは" target="_blank" rel="noopener noreferer">遠赤</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">えんち</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">えんち</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=園地とは" target="_blank" rel="noopener noreferer">園地</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=園池とは" target="_blank" rel="noopener noreferer">園池</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">えんとう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">えんとう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=円頭とは" target="_blank" rel="noopener noreferer">円頭</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=遠東とは" target="_blank" rel="noopener noreferer">遠東</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">えんない</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">えんない</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=園内とは" target="_blank" rel="noopener noreferer">園内</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=円内とは" target="_blank" rel="noopener noreferer">円内</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">えんめい</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">えんめい</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=円明とは" target="_blank" rel="noopener noreferer">円明</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=園名とは" target="_blank" rel="noopener noreferer">園名</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">おう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">おう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=王とは" target="_blank" rel="noopener noreferer">王</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=黄とは" target="_blank" rel="noopener noreferer">黄</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">おうすい</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">おうすい</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=王水とは" target="_blank" rel="noopener noreferer">王水</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=黄水とは" target="_blank" rel="noopener noreferer">黄水</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">おうど</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">おうど</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=王土とは" target="_blank" rel="noopener noreferer">王土</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=黄土とは" target="_blank" rel="noopener noreferer">黄土</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">おうどう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">おうどう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=王道とは" target="_blank" rel="noopener noreferer">王道</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=黄道とは" target="_blank" rel="noopener noreferer">黄道</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">おおめ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">おおめ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=多目とは" target="_blank" rel="noopener noreferer">多目</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=大目とは" target="_blank" rel="noopener noreferer">大目</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">おなご</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">おなご</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=女子とは" target="_blank" rel="noopener noreferer">女子</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=女とは" target="_blank" rel="noopener noreferer">女</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">おやじ</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">おやじ</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=親父とは" target="_blank" rel="noopener noreferer">親父</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=親字とは" target="_blank" rel="noopener noreferer">親字</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">おんがく</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">おんがく</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=音楽とは" target="_blank" rel="noopener noreferer">音楽</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=音学とは" target="_blank" rel="noopener noreferer">音学</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">おんがくか</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">おんがくか</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=音楽家とは" target="_blank" rel="noopener noreferer">音楽家</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=音楽科とは" target="_blank" rel="noopener noreferer">音楽科</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">おんこう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">おんこう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=音工とは" target="_blank" rel="noopener noreferer">音工</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=音高とは" target="_blank" rel="noopener noreferer">音高</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">おんじょう</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">おんじょう</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=音場とは" target="_blank" rel="noopener noreferer">音場</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=音声とは" target="_blank" rel="noopener noreferer">音声</a>
 </dd></dl>
 
-<dl class="row m-0"><dt class="px-1">おんながた</dt><dd class="px-1 m-0">
+<dl class="d-flex m-0"><dt class="px-1">おんながた</dt><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=女形とは" target="_blank" rel="noopener noreferer">女形</a>
 </dd><dd class="px-1 m-0">
 <a href="https://www.google.com/search?q=女方とは" target="_blank" rel="noopener noreferer">女方</a>
@@ -527,7 +527,7 @@
         <a class="px-1" href="/terms/">Terms</a>
         <a class="px-1" href="https://github.com/marmooo/homonym-ja">Contact</a>
       </div>
-      <div class="text-muted">&copy; <a href="https://github.com/marmooo">marmooo</a>. All Rights Reserved.</div>
+      <div class="text-muted">&copy; <a href="https://github.com/marmooo">marmooo</a></div>
     </footer>
     <script src="/homonym-ja/page.js"></script>
   </body>
