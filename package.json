@@ -1,6 +1,6 @@
 {
   "name": "homonym-ja",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Japanese homonym dictionary.",
   "main": "main.js",
   "dependencies": {
