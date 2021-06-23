@@ -13,9 +13,10 @@ Japanese homonym dictionary.
 ## Usage (Deno)
 
 ```
+// git clone https://github.com/marmooo/homonym-ja
 import { HomonymJa } from "homonym-ja/mod.js";
 
-const dict = await HomonymJa.load();
+const dict = await HomonymJa.load("homonym-ja/homonym.csv");
 dict.get('ついきゅう');  // --> [追究, 追及, etc.]
 ```
 
