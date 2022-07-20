@@ -1,11 +1,11 @@
 const dirNames = ["小1", "小2", "小3", "小4", "小5", "小6", "中2", "中3", "常用", "常用外"];
+loadConfig();
 
 function loadConfig() {
   if (localStorage.getItem("darkMode") == 1) {
     document.documentElement.dataset.theme = "dark";
   }
 }
-loadConfig();
 
 function toggleDarkMode() {
   if (localStorage.getItem("darkMode") == 1) {
@@ -40,6 +40,11 @@ function search() {
   }
 }
 
+function changeGrade() {
+  const dir = dirNames[this.selectedIndex];
+  location.href = `/homonym-ja/${dir}/`;
+}
+
 document.addEventListener("keydown", function (event) {
   if (event.key == "Enter") {
     search();
@@ -47,3 +52,4 @@ document.addEventListener("keydown", function (event) {
 }, false);
 document.getElementById("toggleDarkMode").onclick = toggleDarkMode;
 document.getElementById("search").onclick = search;
+document.getElementById("gradeOption").onchange = changeGrade;
