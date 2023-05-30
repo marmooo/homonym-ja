@@ -1,5 +1,5 @@
 import { readLines } from "https://deno.land/std/io/mod.ts";
-import ejs from "https://esm.sh/ejs@3.1.8";
+import * as Eta from "npm:eta@2.2.0";
 
 const w1_ = Array.from(
   "一右雨円王音下火花貝学気九休玉金空月犬見五口校左三山子四糸字耳七車手十出女小上森人水正生青夕石赤千川先早草足村大男竹中虫町天田土二日入年白八百文木本名目立力林六",
@@ -207,14 +207,14 @@ for (let i = 0; i < index.length - 1; i++) {
   }
 }
 
-const template = Deno.readTextFileSync("page.ejs");
+const template = Deno.readTextFileSync("page.eta");
 for (let g = 1; g < learnedKanjis.length + 1; g++) {
   const dir = "src/" + dirNames[g - 1];
   Deno.mkdirSync(dir, { recursive: true });
   for (let i = 0; i < akasataNames.length; i++) {
     const akasataDir = dir + "/" + akasataNames[i];
     Deno.mkdirSync(akasataDir, { recursive: true });
-    const html = ejs.render(template, {
+    const html = Eta.render(template, {
       grade: g,
       gradeName: gradeNames[g - 1],
       homonyms: data[g][i],
