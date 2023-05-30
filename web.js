@@ -42,7 +42,18 @@ const w8 = w8_.concat(w7);
 const w9 = w9_.concat(w8);
 const learnedKanjis = [w1, w1, w2, w3, w4, w5, w6, w7, w8, w9];
 const gradeByKanjis = [w1_, w1_, w2_, w3_, w4_, w5_, w6_, w7_, w8_, w9_];
-const dirNames = ["小1", "小2", "小3", "小4", "小5", "小6", "中2", "中3", "常用", "常用外"];
+const dirNames = [
+  "小1",
+  "小2",
+  "小3",
+  "小4",
+  "小5",
+  "小6",
+  "中2",
+  "中3",
+  "常用",
+  "常用外",
+];
 const gradeNames = [
   "小学1年生",
   "小学2年生",
@@ -207,6 +218,8 @@ for (let i = 0; i < index.length - 1; i++) {
   }
 }
 
+const allHomonyms = Deno.readTextFileSync("homonym.csv");
+const num = allHomonyms.trimEnd().split("\n").length;
 const template = Deno.readTextFileSync("page.eta");
 for (let g = 1; g < learnedKanjis.length + 1; g++) {
   const dir = "src/" + dirNames[g - 1];
@@ -215,6 +228,7 @@ for (let g = 1; g < learnedKanjis.length + 1; g++) {
     const akasataDir = dir + "/" + akasataNames[i];
     Deno.mkdirSync(akasataDir, { recursive: true });
     const html = Eta.render(template, {
+      num: num.toLocaleString("ja-JP"),
       grade: g,
       gradeName: gradeNames[g - 1],
       homonyms: data[g][i],
