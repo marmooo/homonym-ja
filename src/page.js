@@ -17,8 +17,8 @@ function toggleDarkMode() {
   }
 }
 
-function changeGrade() {
-  const dir = dirNames[this.selectedIndex];
+function changeGrade(event) {
+  const dir = dirNames[event.target.selectedIndex];
   location.href = `/homonym-ja/${dir}/`;
 }
 
