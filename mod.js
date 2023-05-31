@@ -6,16 +6,15 @@ class HomonymJa {
       .then((response) => response.text())
       .then((text) => {
         const d = {};
-        text.split("\n").forEach((line) => {
-          if (!line) return;
+        text.trimEnd().split("\n").forEach((line) => {
           const arr = line.split(",");
           const word = arr[0];
           const yomis = arr.slice(1);
           d[word] = yomis;
         });
         return d;
-      }).catch((e) => {
-        console.log(e);
+      }).catch((error) => {
+        console.log(error);
       });
     const homonymJa = new HomonymJa();
     homonymJa.dict = dict;
