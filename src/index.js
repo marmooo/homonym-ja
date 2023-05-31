@@ -42,7 +42,7 @@ function search() {
 
 function changeGrade(event) {
   const dir = dirNames[event.target.selectedIndex];
-  location.href = `/homonym-ja/${dir}/`;
+  location.href = `/homonym-ja/${dir}/あ〜お/`;
 }
 
 document.addEventListener("keydown", (event) => {

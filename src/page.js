@@ -19,7 +19,7 @@ function toggleDarkMode() {
 
 function changeGrade(event) {
   const dir = dirNames[event.target.selectedIndex];
-  location.href = `/homonym-ja/${dir}/`;
+  location.href = `/homonym-ja/${dir}/あ〜お/`;
 }
 
 document.getElementById("toggleDarkMode").onclick = toggleDarkMode;
