@@ -7,7 +7,7 @@ const dicts = [
 ];
 
 function kanaToHira(str) {
-  return str.replace(/[\u30a1-\u30f6]/g, function (match) {
+  return str.replace(/[ァ-ヶ]/g, (match) => {
     const chr = match.charCodeAt(0) - 0x60;
     return String.fromCharCode(chr);
   });
@@ -55,7 +55,6 @@ async function addData(path) {
     if (data && data[0] && data[1]) {
       let [word, yomi] = data;
       yomi = kanaToHira(yomi);
-      word = kanaToHira(word);
       const words = d[yomi];
       if (words) {
         if (!d[yomi].includes(word)) {
