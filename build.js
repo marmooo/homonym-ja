@@ -38,7 +38,7 @@ function getWord(line) {
   } else {
     // "割り切れる, 割りきれる, 割切れる" を同音異義語とするのは無理がある
     // word で正規化すると "挙げる --> 上げる" に正規化される
-    // A 基準に限定すると surface では不要な語句が多すぎる
+    // B 基準以上は surface だと不要な語句が多すぎる
     // --> A 基準に限定して word で正規化するのが一番マシ
     if (form2 != "終止形-一般") return false;
     if (abc != "A") return false;
