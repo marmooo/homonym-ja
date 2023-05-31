@@ -4,33 +4,17 @@ Japanese homonym dictionary.
 
 ## Build
 
-1. install [SudachiDict](https://github.com/WorksApplications/SudachiDict)
-2. install
-   [NAIST-jdic](https://ja.osdn.net/projects/naist-jdic/downloads/53500/mecab-naist-jdic-0.6.3b-20111013.tar.gz/)
-3. `deno run --allow-read --allow-write build.js`
-4. `bash build.sh`
+- install [SudachiDict](https://github.com/WorksApplications/SudachiDict)
+- `deno run --allow-read --allow-write build.js`
+- `bash build.sh`
 
-## Usage (Deno)
+## Usage
 
 ```
-// git clone https://github.com/marmooo/homonym-ja
 import { HomonymJa } from "homonym-ja/mod.js";
 
-const dict = await HomonymJa.load("homonym-ja/homonym.csv");
+const dict = await HomonymJa.load("homonym.csv");
 dict.get('ついきゅう');  // --> [追究, 追及, etc.]
-```
-
-## Usage (Node.js)
-
-```
-// npm install homonym-ja
-const YomiDict = require("homonym-ja");
-
-async function main() {
-  const dict = await HomonymJa.load();
-  dict.get('ついきゅう');  // --> [追究, 追及, etc.]
-}
-main();
 ```
 
 ## License

@@ -24,9 +24,6 @@ class HomonymJa {
 
   static async load(filepath) {
     const dict = {};
-    if (!filepath) {
-      filepath = "./homonym-ja/homonym.csv";
-    }
     const fileReader = await Deno.open(filepath);
     for await (const line of readLines(fileReader)) {
       const arr = line.split(",");
@@ -34,6 +31,7 @@ class HomonymJa {
       const yomis = arr.slice(1);
       dict[word] = yomis;
     }
+    fileReader.close();
     const homonymJa = new HomonymJa();
     homonymJa.dict = dict;
     return homonymJa;

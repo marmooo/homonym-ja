@@ -1,11 +1,7 @@
 import { HomonymJa } from "./mod.js";
+import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 
-let dict = await HomonymJa.load("homonym.csv");
-console.log("ついきゅう --> " + dict.get("ついきゅう"));
-console.log("はえる --> " + dict.get("はえる"));
-
-dict = await HomonymJa.fetch(
-  "https://raw.githubusercontent.com/marmooo/homonym-ja/main/homonym.csv",
-);
-console.log("ついきゅう --> " + dict.get("ついきゅう"));
-console.log("はえる --> " + dict.get("はえる"));
+Deno.test("Simple check", async () => {
+  const dict = await HomonymJa.load("homonym.csv");
+  assertEquals(dict.get("あさいち"), ["朝一", "朝市"]);
+});
