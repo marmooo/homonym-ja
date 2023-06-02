@@ -14,7 +14,7 @@ Japanese homonym dictionary.
 import { HomonymJa } from "homonym-ja/mod.js";
 
 const dict = await HomonymJa.load("homonym.csv");
-dict.get('ついきゅう');  // --> [追究, 追及, etc.]
+dict.get("ついきゅう");  // --> ["追究", "追及", etc.]
 ```
 
 ## License
