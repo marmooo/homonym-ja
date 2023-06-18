@@ -5,6 +5,7 @@ Japanese homonym dictionary.
 ## Build
 
 - install [SudachiDict](https://github.com/WorksApplications/SudachiDict)
+   licensed under the [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 - `deno run --allow-read --allow-write build.js`
 - `bash build.sh`
 
@@ -20,8 +21,3 @@ dict.get("ついきゅう");  // --> ["追究", "追及", etc.]
 ## License
 
 Apache-2.0
-
-## Attribution
-
-- [SudachiDict](https://github.com/WorksApplications/SudachiDict) is licensed
-  under the [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0).
