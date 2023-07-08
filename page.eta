@@ -32,7 +32,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand navbar-light">
+      <nav class="navbar navbar-expand">
         <div class="container flex-wrap">
           <a class="navbar-brand" href="/homonym-ja/">
             <img alt="同音異義語 (<%= it.num %>)" src="/homonym-ja/favicon/favicon.svg" width="32" height="32">
