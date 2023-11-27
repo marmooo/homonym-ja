@@ -10,7 +10,7 @@ await build({
   },
   package: {
     name: "homonym-ja",
-    version: "0.1.4",
+    version: "0.1.5",
     description: "Japanese homonym dictionary.",
     license: "Apache-2.0",
     main: "mod.js",
