@@ -5,7 +5,7 @@ Japanese homonym dictionary.
 ## Build
 
 - install [SudachiDict](https://github.com/WorksApplications/SudachiDict)
-   licensed under the [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+  licensed under the [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 - `deno run --allow-read --allow-write build_dict.js`
 - `bash build.sh`
 
