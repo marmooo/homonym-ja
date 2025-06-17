@@ -1,5 +1,5 @@
 import { HomonymJa } from "./mod.js";
-import { assertEquals } from "jsr:@std/assert/equals";
+import { assertEquals } from "@std/assert";
 
 Deno.test("Simple check", async () => {
   const dict = await HomonymJa.load("homonym.csv");
