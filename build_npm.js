@@ -1,10 +1,11 @@
-import { build, emptyDir } from "jsr:@deno/dnt";
+import { build, emptyDir } from "@deno/dnt";
 
 await emptyDir("./npm");
 
 await build({
   entryPoints: ["./mod.js"],
   outDir: "./npm",
+  typeCheck: false,
   compilerOptions: {
     lib: ["ESNext"],
   },
