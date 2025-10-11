@@ -66,11 +66,14 @@
         <p><%= it.gradeName %>までの漢字で構成される [<%= it.akasataName %>] の同音意義語の一覧です。</p>
       </div>
       <div class="card">
-        <div class="card-header">同音異義語の一覧</div>
+        <div class="card-header">語順リスト</div>
         <div class="card-body text-center notranslate">
-          <nav>
-            <%~ it.toNav(it.grade, it.akasataNames, it.dirNames) %>
-          </nav>
+          <%~ it.toNav(it.grade, it.akasataNames, it.dirNames) %>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">同音異義語一覧</div>
+        <div class="card-body text-center notranslate">
           <div class="d-flex flex-wrap">
             <%~ it.toSection(it.homonyms) %>
           </div>
