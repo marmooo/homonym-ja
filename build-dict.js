@@ -19,7 +19,7 @@ function getWord(line) {
   const leftId = arr[1];
   const pos1 = arr[5];
   const pos2 = arr[6];
-  const form2 = arr[10];
+  const form = arr[10];
   const yomi = arr[11];
   const word = arr[12];
   const abc = arr[14];
@@ -32,13 +32,22 @@ function getWord(line) {
       word,
     )
   ) return;
+  if (leftId == "-1") return;
+  if (pos1 == "補助記号") return;
+  if (pos1 == "記号") return;
+  if (pos1 == "接頭辞") return;
+  if (pos1 == "接尾辞") return;
+  if (pos2 == "固有名詞") return;
   if (pos1 == "名詞") {
-    if (pos2 == "固有名詞") return;
     if (surface != word) return;
     return [word, yomi];
   } else {
     if (surface.includes("ー")) return; // noisy
-    if (form2 != "終止形-一般") return;
+    if (form != "*") {
+      if (!form.includes("終止形")) return;
+      if (form.includes("促音便")) return;
+      if (form.includes("撥音便")) return;
+    }
     if (abc != "A") return;
     if (surface != word) return;
     return [word, yomi];
