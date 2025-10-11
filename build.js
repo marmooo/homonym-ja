@@ -56,42 +56,33 @@ function toNav(grade, akasataNames) {
   return html;
 }
 
-function toSection(mode, homonyms) {
+function toSection(homonyms) {
   let html = "\n";
   let count = 0;
   homonyms.forEach((homonym) => {
     const [yomi, words] = homonym;
-    const def = toDef(yomi, words, mode);
+    const def = toDef(yomi, words);
     if (def.length != 0) {
       html += def;
       count += 1;
     }
   });
   if (count == 0) {
-    html += "<p>この年次に習う" + mode + "はありません。</p>";
+    html += "<p>この年次に習う同音異義語はありません。</p>";
   }
   return html;
 }
 
-function toDef(yomi, words, mode) {
+function toDef(yomi, words) {
   let count = 0;
   let html = '\n<dl class="d-flex flex-wrap m-0">';
   html += '<dt class="px-1">' + yomi + "</dt>";
   words.forEach((word) => {
-    if (mode == "同音異字") {
-      if (!/[ぁ-ん]/.test(word)) {
-        count += 1;
-        html += '<dd class="px-1 m-0">' + toLink(word) + "</dd>";
-      }
-    } else {
-      if (/[ぁ-ん]/.test(word)) {
-        count += 1;
-        html += '<dd class="px-1 m-0">' + toLink(word) + "</dd>";
-      }
-    }
+    count += 1;
+    html += '<dd class="px-1 m-0">' + toLink(word) + "</dd>";
   });
   html += "</dl>\n";
-  if (count == 0) {
+  if (count <= 1) {
     return "";
   } else {
     return html;
